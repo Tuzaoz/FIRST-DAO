@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Seller implements Serializable {
     private Integer id;
     private String name;
-    private String emai;
+    private String email;
     private LocalDate birthDate;
     private Double baseSalary;
     private Department department;
@@ -16,10 +16,10 @@ public class Seller implements Serializable {
         this.id = id;
     }
 
-    public Seller(Integer id, String name, String emai, LocalDate birthDate, Double baseSalary, Department department) {
+    public Seller(Integer id, String name, String email, LocalDate birthDate, Double baseSalary, Department department) {
         this.id = id;
         this.name = name;
-        this.emai = emai;
+        this.email = email;
         this.birthDate = birthDate;
         this.baseSalary = baseSalary;
         this.department = department;
@@ -41,12 +41,12 @@ public class Seller implements Serializable {
         this.name = name;
     }
 
-    public String getEmai() {
-        return emai;
+    public String getemail() {
+        return email;
     }
 
-    public void setEmai(String emai) {
-        this.emai = emai;
+    public void setemail(String email) {
+        this.email = email;
     }
 
     public LocalDate getBirthDate() {
@@ -78,11 +78,11 @@ public class Seller implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Seller seller = (Seller) o;
-        return Objects.equals(id, seller.id) && Objects.equals(name, seller.name) && Objects.equals(emai, seller.emai) && Objects.equals(birthDate, seller.birthDate) && Objects.equals(baseSalary, seller.baseSalary) && Objects.equals(department, seller.department);
+        return Objects.equals(id, seller.id) && Objects.equals(name, seller.name) && Objects.equals(email, seller.email) && Objects.equals(birthDate, seller.birthDate) && Objects.equals(baseSalary, seller.baseSalary) && Objects.equals(department, seller.department);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, emai, birthDate, baseSalary, department);
+        return Objects.hash(id, name, email, birthDate, baseSalary, department);
     }
 }
