@@ -85,4 +85,16 @@ public class Seller implements Serializable {
     public int hashCode() {
         return Objects.hash(id, name, email, birthDate, baseSalary, department);
     }
+
+    @Override
+    public String toString() {
+        return "Seller{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", birthDate=" + birthDate +
+                ", baseSalary=" + baseSalary +
+                ", department=" + department +
+                '}';
+    }
 }
