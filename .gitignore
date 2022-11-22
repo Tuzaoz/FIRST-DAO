@@ -24,7 +24,7 @@
 hs_err_pid*
 =======
 ### IntelliJ IDEA ###
-!**/idea/**/out
+!**/.idea/**/out/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
