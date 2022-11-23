@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class SellerDaoJDBC implements SellerDao {
-    private Connection conn;
+    private final Connection conn;
 
     public SellerDaoJDBC(Connection conn) {
         this.conn = conn;
@@ -52,11 +52,37 @@ public class SellerDaoJDBC implements SellerDao {
 
     @Override
     public void update(Seller obj) {
+        PreparedStatement statement = null;
+        try {
+            statement = conn.prepareStatement("update seller " +
+                    "set Name=?, Email=?, BirthDate=?, BaseSalary=?, DepartmentId=? " +
+                    "where Id=? ");
+            statement.setString(1, obj.getName());
+            statement.setString(2, obj.getemail());
+            statement.setDate(3, Date.valueOf(obj.getBirthDate()));
+            statement.setDouble(4,obj.getBaseSalary());
+            statement.setInt(5,obj.getDepartment().getId());
+            statement.setInt(6,obj.getId());
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            DB.closeStatement(statement);
+        }
 
     }
 
     @Override
-    public void deleteById(Seller obj) {
+    public void deleteById(Integer id) {
+        PreparedStatement statement = null;
+        try {
+            statement = conn.prepareStatement("delete from seller where Id=?");
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
