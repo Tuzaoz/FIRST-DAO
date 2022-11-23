@@ -3,6 +3,8 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 public class Main {
@@ -26,6 +28,11 @@ public class Main {
         ) {
             System.out.println(s);
         }
+        System.out.println();
+        System.out.println("==== Teste Insert ====");
+        Seller seller1 = new Seller(null,"Tuzão","tuzão@gmail.com", LocalDate.now(), 4000.0, department);
+        sellerDao.insert(seller1);
+        System.out.println("Inserted. new id: "+ seller1.getId());
 
     }
 }
