@@ -11,6 +11,7 @@ public class Main {
         SellerDao sellerDao = DaoFactory.createSellerDao();
         Seller seller = sellerDao.findById(3);
         System.out.println(seller);
+        System.out.println();
         System.out.println("==== Teste findByDepartmentId ====");
         Department department = new Department(2,null);
         List<Seller> sellers = sellerDao.findByDepartmentId(department);
@@ -18,5 +19,13 @@ public class Main {
              ) {
             System.out.println(s);
         }
+        System.out.println();
+        System.out.println("==== Teste findAll ====");
+        List<Seller> sellers2 = sellerDao.findAll();
+        for (Seller s :sellers2
+        ) {
+            System.out.println(s);
+        }
+
     }
 }
