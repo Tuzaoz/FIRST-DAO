@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4401de3-72fa-4a83-9873-8c1df48e2d81" name="Changes" comment="Criado método Insert">
+    <list default="true" id="b4401de3-72fa-4a83-9873-8c1df48e2d81" name="Changes" comment="Criado método Delete">
+      <change afterPath="$PROJECT_DIR$/src/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/impl/DepartmentDaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2852b0cc-1e36-4f96-b531-aeebd339e231.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2852b0cc-1e36-4f96-b531-aeebd339e231.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/SellerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/SellerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DepartmentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/impl/SellerDaoJDBC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +141,7 @@
       <recent name="C:\Users\Arthur Dantas\Documents\Códigos\ws-java\FIRST DAO\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Program2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="FIRST DAO" />
@@ -146,8 +149,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Program2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program2" />
+      <module name="FIRST DAO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program2" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -212,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669238012694</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Criado método Delete">
+      <created>1669239764269</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669239764269</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +267,7 @@
     <MESSAGE value="Criada classses SellerDaoJDBC e DaoFactory" />
     <MESSAGE value="Criado método findAll" />
     <MESSAGE value="Criado método Insert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado método Insert" />
+    <MESSAGE value="Criado método Delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado método Delete" />
   </component>
 </project>
